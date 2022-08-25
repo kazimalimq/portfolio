@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import { Header, Navbar, About, Experience,Portfolio,Footer } from "./components";
 
 const App = () => {
   return (
-    <div id='app'>This is the App</div>
-  )
-}
+    <>
+      <Header />
+      <Navbar />
+      <About/>
+      <Experience/>
+      <Portfolio/>
+      <Footer />
+    </>
+  );
+};
 
-export default App
+export default App;
