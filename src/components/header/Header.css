@@ -1,6 +1,6 @@
 header{
-    padding-top: 7rem ;
     height: 100vh;
+    padding-top: 7rem ;
     overflow: hidden;
 }
 .header__container{
@@ -14,7 +14,7 @@ header{
      margin-top: 2.5rem;
      display: flex;
      justify-content: center;
-     gap: 1rem;
+     gap: 1.2rem;
  }
 
  /*---------Header Socials Styles---------*/
@@ -22,15 +22,15 @@ header{
      display: flex;
      flex-direction: column;
      align-items: center;
-     gap: 0.8;
+     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 3rem; 
+    bottom: 3rem;   
  }
  .header__socials::after{
      content: "";
      width: 1px;
-     height: 3rem;
+     height: 2rem;
    
      background: var(--color-primary);
  }
@@ -46,7 +46,7 @@ header{
      margin-top: 4rem;
      border-radius: 12rem 12rem 0 0;
      overflow: hidden;
-     padding: 5rem 3rem 1.5rem 3rem;
+    padding: 5rem 1.5rem 1.5rem 1.5rem ;
 
  }
 
@@ -70,7 +70,7 @@ header{
 
 @media screen and (max-width: 600px){ 
     header{
-        height: 68vh;
+        height: 100vh;
     }
 
     .header__socials, .scroll__down{
