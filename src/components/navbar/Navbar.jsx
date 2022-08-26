@@ -1,10 +1,27 @@
-import React from 'react'
-import './Navbar.css'
+import React, { useState } from "react";
+import "./Navbar.css";
+import { AiOutlineHome, AiOutlineUser, AiOutlineProject } from "react-icons/ai";
+import { BiMessageSquareDetail} from 'react-icons/bi'
 
 const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
-}
 
-export default Navbar
+  const [activeNav, setActiveNav] = useState("#")
+  return (
+    <nav>
+      <a onClick={()=> setActiveNav('#')}className={activeNav=== '#'? 'active': '' } href="#">
+        <AiOutlineHome />
+      </a>
+      <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav=== '#about'? 'active': '' }>
+        <AiOutlineUser />
+      </a>
+      <a href="#portfolio" onClick={()=> setActiveNav('#portfolio')} className={activeNav=== '#portfolio'? 'active': '' }>
+        <AiOutlineProject />
+      </a>
+      <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav=== '#contact'? 'active': '' }>
+        <BiMessageSquareDetail />
+      </a>
+    </nav>
+  );
+};
+
+export default Navbar;
